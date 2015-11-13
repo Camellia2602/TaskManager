@@ -1,0 +1,5 @@
+group = 'by.taskManager.moduleServices'
+description = 'moduleServices'
+dependencies {
+  compile project(':moduleDao')
+}

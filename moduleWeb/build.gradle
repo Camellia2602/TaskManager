@@ -1,0 +1,8 @@
+group = 'by.taskManager.moduleWeb'
+apply plugin: 'war'
+
+description = 'moduleWeb'
+dependencies {
+  compile project(':moduleServices')
+    compile group: 'org.apache.tomcat', name: 'tomcat-servlet-api', version:'8.0.17'
+}
