@@ -9,12 +9,11 @@ import by.taskManager.dao.BaseDao;
 import by.taskManager.dao.IPriorityDao;
 
 @Repository
-public class PriorityDaoImpl extends BaseDao<Priority> implements IPriorityDao{
+public class PriorityDaoImpl extends BaseDao<Priority> implements IPriorityDao {
 
 	@Autowired
 	public PriorityDaoImpl(SessionFactory sessionFactory) {
 		super(sessionFactory);
 	}
-	
 
 }

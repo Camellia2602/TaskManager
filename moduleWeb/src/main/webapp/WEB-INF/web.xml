@@ -27,7 +27,25 @@
 		<servlet-name>Delete</servlet-name>
 		<url-pattern>/delete</url-pattern>
 	</servlet-mapping>
-    <listener>
+	<servlet>
+        <servlet-name>Add</servlet-name>
+        <servlet-class>by.taskManager.servlets.AddController</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+		<servlet-name>Add</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	<servlet>
+        <servlet-name>Task</servlet-name>
+        <servlet-class>by.taskManager.servlets.TaskController</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+		<servlet-name>Task</servlet-name>
+		<url-pattern>/task</url-pattern>
+	</servlet-mapping>
+	<listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 

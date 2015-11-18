@@ -11,12 +11,11 @@ import by.taskManager.services.IPriorityService;
 
 @Service
 @Transactional
-public class PriorityServiceImpl extends BaseService<Priority> implements IPriorityService{
-	
+public class PriorityServiceImpl extends BaseService<Priority> implements IPriorityService {
+
 	@Autowired
 	public PriorityServiceImpl(IPriorityDao priorityDaoImpl) {
 		super(priorityDaoImpl);
 	}
 
 }
- 

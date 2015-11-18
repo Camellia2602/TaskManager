@@ -11,29 +11,29 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class Task implements Serializable{
-	
+public class Task implements Serializable {
+
 	private static final long serialVersionUID = 342261157271724796L;
 
 	public Task() {
-		 
+
 	}
-	
-	//id in the database
+
+	// id in the database
 	@Id
-    @Column
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-	
-	//name of the task
 	@Column
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
+	// name of the task
+	@Column(length = 50)
 	private String name;
-	 
-	//description of the task
-	@Column
+
+	// description of the task
+	@Column(length = 1000)
 	private String description;
-	 
-	//priority of the task
+
+	// priority of the task
 	@Column
 	private int priorityId;
 
@@ -115,5 +115,4 @@ public class Task implements Serializable{
 				+ "]";
 	}
 
-    
 }

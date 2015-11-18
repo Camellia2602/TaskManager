@@ -11,21 +11,22 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class Priority implements Serializable{
-	
+public class Priority implements Serializable {
+
 	private static final long serialVersionUID = 2862643389716296704L;
 
 	public Priority() {
-		
+
 	}
-	//id in the database
+
+	// id in the database
 	@Id
 	@Column
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	//name of priority
-	@Column
+
+	// name of priority
+	@Column(length = 50)
 	private String name;
 
 	public Long getId() {
@@ -79,6 +80,5 @@ public class Priority implements Serializable{
 	public String toString() {
 		return "Priorities [id=" + id + ", name=" + name + "]";
 	}
-		 
 
 }

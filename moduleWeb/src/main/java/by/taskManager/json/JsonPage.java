@@ -1,4 +1,4 @@
-package by.taskManager.servlets;
+package by.taskManager.json;
 
 import java.util.List;
 
@@ -6,10 +6,14 @@ import by.taskManager.beans.Priority;
 import by.taskManager.beans.Task;
 
 public class JsonPage {
-	
+
 	private List<Task> tasks;
-	
+
 	private List<Priority> priorities;
+
+	private int currentPage;
+
+	private boolean nextPage;
 
 	public List<Task> getTasks() {
 		return tasks;
@@ -26,6 +30,21 @@ public class JsonPage {
 	public void setPriorities(List<Priority> priorities) {
 		this.priorities = priorities;
 	}
-	
-	
+
+	public int getCurrentPage() {
+		return currentPage;
+	}
+
+	public void setCurrentPage(int currentPage) {
+		this.currentPage = currentPage;
+	}
+
+	public boolean isNextPage() {
+		return nextPage;
+	}
+
+	public void setNextPage(boolean nextPage) {
+		this.nextPage = nextPage;
+	}
+
 }

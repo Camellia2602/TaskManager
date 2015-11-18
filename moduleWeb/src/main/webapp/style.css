@@ -1,0 +1,33 @@
+table.table {
+	border-collapse: collapse;
+	margin: 5px 0 5px 2px;
+	width: auto;
+}
+
+table {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: grey;
+}
+
+th.th {
+	border: 2px solid #ccc;
+	background: #f5f5f5;
+	padding: 0px 10px 0px 10px;
+	text-align: center;
+}
+
+td.td {
+	border: 2px solid #ccc;
+	padding: 0px 10px 0px 10px;
+}
+
+th {
+	font-weight: bold;
+}
+
+td, th {
+	display: table-cell;
+	vertical-align: inherit;
+}
